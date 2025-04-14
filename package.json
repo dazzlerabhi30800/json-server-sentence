@@ -1,12 +1,25 @@
 {
-  "name": "json-server-vercel",
+  "name": "json-server-vercel-main",
   "version": "1.0.0",
-  "description": "Deploy JSON Server to Vercel",
-  "main": "api/server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node api/server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dazzlerabhi30800/json-server-sentence.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dazzlerabhi30800/json-server-sentence/issues"
+  },
+  "homepage": "https://github.com/dazzlerabhi30800/json-server-sentence#readme",
+  "description": "",
   "dependencies": {
-    "json-server": "^0.17.4"
+    "express": "^5.1.0"
   }
 }
