@@ -20,6 +20,7 @@
   "homepage": "https://github.com/dazzlerabhi30800/json-server-sentence#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }
