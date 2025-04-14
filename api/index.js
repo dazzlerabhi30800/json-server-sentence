@@ -135,12 +135,17 @@ const data = {
 };
 
 // GET all posts
-app.get("/data", (req, res) => {
+app.get("/api/data", (req, res) => {
   res.json(data);
 });
 
-app.get("/test", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.json({ message: "this is for testing" });
+});
+
+app.use((req, res) => {
+  console.log(`No route matched for ${req.method} ${req.url}`);
+  res.status(404).json({ error: `Cannot ${req.method} ${req.url}` });
 });
 
 // Start the server locally
